@@ -1,0 +1,40 @@
+<%- include ('./partials/header.ejs') %>
+
+<main class="container">
+    <div id="mail-to">
+    </div>
+        <form action="POST" id="form">
+            <h1 id="heading">Destinário</h1>
+          <label for="origem" id="origem" name="origem">Origem:</label>
+          <input type="text" name="origem" id="origem" />
+          <label for="destino" id="destino" name="origem">Destino:</label>
+          <input type="text" name="destino" id="destino" />
+          <section id="chat">
+              <div class='balloon' id="user">
+                a  
+            </div>
+           
+            <div class="balloon message">
+                a
+            </div>
+            
+            <div class='balloon' id="user2">
+                a
+            </div>
+            
+            <div class="balloon message">
+                a
+            </div>
+        </section>
+        <div id="move">
+            <h3>Mensagem</h3>
+            <br />
+           
+            <textarea id="txt-msg"></textarea>
+            <br />
+            <button type="submit">Enviar</button>
+        
+        </div>
+            
+        </form>
+</main> 
