@@ -79,7 +79,7 @@ body {
     width: 25vw;
     height: 5vh;
 
-    margin-bottom: 1vh;
+    margin-bottom: 4vh;
     margin-left: 5vw;
 
 
@@ -88,11 +88,10 @@ body {
 #chat{
     display: flex;
     flex-direction: column;
-
+    
     width: 25vw;
-    height: 45vh;
-
-    margin-left: 5vw;
+    height: 60vh;
+    margin-left: 25vw;
     margin-bottom: 1vh;
     margin-top: 2vh;
     
@@ -101,24 +100,45 @@ body {
 .balloon{
     display: flex;
     flex-direction: column;
-
+    
     width: 25vw;
     height: 20vh;
-
+    
     margin: 1.5%;
-
-    border:2px solid #000 ;
+    
+    border:2px solid #000;
+    
+    border-radius: 0.5rem;
+    box-shadow: #656565;
 }
 
-#move{
+.move{
     display: flex;
     flex-direction: column;
     
      margin-left: 5vw;
          
-    
     }
 
     .message{
         margin-left: 10vw;
     }
+
+#txt-msg{
+
+    width: 20vw;
+    height: 40vh;
+    
+    resize: none;
+}
+
+#btn-send{
+    width: 15vw;
+    height: 5vh;
+
+    margin-left: 2vw;
+
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0 0 0.75rem red)
+}

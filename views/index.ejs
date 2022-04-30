@@ -3,11 +3,11 @@
 <main class="container">
     <div id="mail-to">
     </div>
-        <form action="POST" id="form">
+        <div id="form">
             <h1 id="heading">Destinário</h1>
-          <label for="origem" id="origem" name="origem">Origem:</label>
+          <label for="origem" name="origem" class="move">Origem:</label>
           <input type="text" name="origem" id="origem" />
-          <label for="destino" id="destino" name="origem">Destino:</label>
+          <label for="destino"  name="origem" class="move">Destino:</label>
           <input type="text" name="destino" id="destino" />
           <section id="chat">
               <div class='balloon' id="user">
@@ -26,15 +26,49 @@
                 a
             </div>
         </section>
-        <div id="move">
+        <div class="move">
             <h3>Mensagem</h3>
             <br />
            
             <textarea id="txt-msg"></textarea>
             <br />
-            <button type="submit">Enviar</button>
-        
+            <button onclick="send()" id="btn-send">Enviar</button>
         </div>
             
-        </form>
+        </div>
 </main> 
+    <script type="application/javascript">
+        
+        
+        const inputDestino = document.getElementById('destino');
+        const inputOrigem = document.getElementById('origem');
+        const inputMensagem = document.getElementById('txt-msg');
+        
+        var obj = {
+            origem: inputOrigem.value,
+            destino: inputDestino.value,
+            mensagem: inputMensagem.value    
+        }
+        
+        function send () {
+            alert();
+            var xhr = new XMLHttpRequest();
+            console.log(inputDestino.value , inputOrigem.value)
+            // https://barth.com.br/ApiChatCliqx/chat/verificarMensagem.php?origem=${imputOrigem.value}&destino=${imputDestino.value};
+            xhr.open("POST", "https://barth.com.br/ApiChatCliqx/chat/inserirMensagem.php");
+            xhr.send(JSON.stringify(obj));
+            
+            xhr.onreadystatechange = function () {
+                
+                console.log(xhr.readyState)
+                if (xhr.readyState === 4) {
+                    
+                    console.log(xhr.status)
+                    if (xhr.status == 200) {
+                  
+                    }
+                }
+            };  
+        }// fim pesquisa
+        </script>
+</body>
