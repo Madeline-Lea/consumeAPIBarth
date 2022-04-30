@@ -32,3 +32,14 @@ Recomendo que instale a dependência nodemon por fora dando em modo global e dev
 <code style="color:red">npm install nodemon --dev -g</code>
 
 
+Apos ter feito isso rode o comando de inicialização da APP em seu terminal. 
+
+<code style="color:purple">nodemon app.js</code>
+
+Caso esteja tudo esteja funcionando irá aparecer essa mensagem: 
+
+<code style="color:brown">server running into 3001</code>
+
+Então após esses passos insira em seu navegador o seguinte link:
+
+<code>localhost:3001/home</code>
