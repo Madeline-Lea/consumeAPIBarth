@@ -8,7 +8,7 @@
           <label for="origem" name="origem" class="move">Origem:</label>
           <input type="text" name="origem" id="origem" />
           <label for="destino"  name="origem" class="move">Destino:</label>
-          <input type="text" name="destino" id="destino" />
+          <input type="text" name="destino" id="destino"/>
           <section id="chat">
               <div class='balloon' id="user">
                 a  
@@ -32,43 +32,14 @@
            
             <textarea id="txt-msg"></textarea>
             <br />
-            <button onclick="send()" id="btn-send">Enviar</button>
+            <button onclick="enviar()" id="btn-send">Enviar</button> <br />
+            <button onclick="receberAjax()" id="btn-send">Receber</button>
         </div>
             
         </div>
 </main> 
-    <script type="application/javascript">
-        
-        
-        const inputDestino = document.getElementById('destino');
-        const inputOrigem = document.getElementById('origem');
-        const inputMensagem = document.getElementById('txt-msg');
-        
-        var obj = {
-            origem: inputOrigem.value,
-            destino: inputDestino.value,
-            mensagem: inputMensagem.value    
-        }
-        
-        function send () {
-            alert();
-            var xhr = new XMLHttpRequest();
-            console.log(inputDestino.value , inputOrigem.value)
-            // https://barth.com.br/ApiChatCliqx/chat/verificarMensagem.php?origem=${imputOrigem.value}&destino=${imputDestino.value};
-            xhr.open("POST", "https://barth.com.br/ApiChatCliqx/chat/inserirMensagem.php");
-            xhr.send(JSON.stringify(obj));
-            
-            xhr.onreadystatechange = function () {
-                
-                console.log(xhr.readyState)
-                if (xhr.readyState === 4) {
-                    
-                    console.log(xhr.status)
-                    if (xhr.status == 200) {
-                  
-                    }
-                }
-            };  
-        }// fim pesquisa
-        </script>
+<script src="js/main.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11">
+</script>
 </body>
+</html>

@@ -11,11 +11,11 @@
 
 Após ter a aplicação em sua maquina no seu terminal insira: 
 
-<h4>Linux:</h4>
+<h4>Linux/macOS:</h4>
 
 <code style="color:blue"> sudo npm install</code> 
 
-<h4>Windows</h4>
+<h4>Windows:</h4>
 
 <code style="color:red">npm install</code>
 
@@ -38,8 +38,10 @@ Apos ter feito isso rode o comando de inicialização da APP em seu terminal.
 
 Caso esteja tudo esteja funcionando irá aparecer essa mensagem: 
 
-<code style="color:brown">server running into 3001</code>
+<code style="color:brown">server running into 3001...</code>
 
 Então após esses passos insira em seu navegador o seguinte link:
 
 <code>localhost:3001/home</code>
+
+E pronto a aplicação já está pronta para uso.

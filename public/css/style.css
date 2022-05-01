@@ -1,7 +1,14 @@
-* {box-sizing: border-box;}
-
-body { 
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #afa5a5;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,7 +24,7 @@ body {
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -41,104 +48,122 @@ body {
   float: right;
 }
 
-
 /* body */
 
-#heading{
-    margin-left: 3vw;
-    
-    font-size: 20px;
+#heading {
+  margin-left: 3vw;
+
+  font-size: 20px;
 }
 
-#form{
-    display: flex;
-    flex-direction: column;
+#form {
+  display: flex;
+  flex-direction: column;
 
-    width: 45vw;
-    height: 50vh;
+  width: 75vw;
+  height: 100%;
 
-    margin-bottom: 3vh;
-    margin-top: 5.5vh;
+  margin-bottom: 3vh;
+  margin-top: 5.5vh;
+
+  border: #000 solid 2px;
 }
 
-#origem{
-    display: flex;
+#origem {
+  display: flex;
 
-    width: 25vw;
-    height: 5vh;
-    
-    margin-bottom: 1vh;
-    margin-left: 5vw;
+  width: 25vw;
+  height: 6.5vh;
 
+  margin-bottom: 1vh;
+  margin-left: 5vw;
+
+  text-indent: 4%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 14px;
+
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  outline: none;
+
+  background: whitesmoke;
 }
 
+#destino {
+  display: flex;
 
-#destino{
-    display: flex;
+  width: 25vw;
+  height: 6.5vh;
 
-    width: 25vw;
-    height: 5vh;
+  margin-bottom: 4vh;
+  margin-left: 5vw;
 
-    margin-bottom: 4vh;
-    margin-left: 5vw;
+  font-size: 14px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-indent: 4%;
 
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  outline: none;
 
+  background: whitesmoke;
 }
 
-#chat{
-    display: flex;
-    flex-direction: column;
-    
-    width: 25vw;
-    height: 60vh;
-    margin-left: 25vw;
-    margin-bottom: 1vh;
-    margin-top: 2vh;
-    
+#chat {
+  display: flex;
+  flex-direction: column;
+
+  width: 25vw;
+  height: 60vh;
+
+  margin-left: 25vw;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
 }
 
-.balloon{
-    display: flex;
-    flex-direction: column;
-    
-    width: 25vw;
-    height: 20vh;
-    
-    margin: 1.5%;
-    
-    border:2px solid #000;
-    
-    border-radius: 0.5rem;
-    box-shadow: #656565;
+.balloon {
+  display: flex;
+  flex-direction: column;
+
+  width: 25vw;
+  height: 20vh;
+
+  margin: 1.5%;
+
+  border: 2px solid #000;
+
+  border-radius: 0.5rem;
+  box-shadow: #656565;
 }
 
-.move{
-    display: flex;
-    flex-direction: column;
-    
-     margin-left: 5vw;
-         
-    }
+.move {
+  display: flex;
+  flex-direction: column;
 
-    .message{
-        margin-left: 10vw;
-    }
-
-#txt-msg{
-
-    width: 20vw;
-    height: 40vh;
-    
-    resize: none;
+  margin-left: 5vw;
 }
 
-#btn-send{
-    width: 15vw;
-    height: 5vh;
+.message {
+  margin-left: 10vw;
+}
 
-    margin-left: 2vw;
+#txt-msg {
+  width: 20vw;
+  height: 40vh;
 
-    border: 2px solid transparent;
-    border-radius: 0.5rem;
-    filter: drop-shadow(0 0 0.75rem red)
+  resize: none;
+}
+
+#btn-send {
+  width: 15vw;
+  height: 5vh;
+
+  margin-left: 2vw;
+
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+
+  filter: drop-shadow(0 0 0.75rem red);
 }
