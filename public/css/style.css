@@ -1,26 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
-  background: #afa5a5;
+
+  background: url("https://images.pling.com/img/00/00/56/26/59/1441980/c9a258452a62c906280dc94838712c49c9434949af77fe1ff1479a5b0f6af18a7cf8.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+  object-fit: cover;
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: rgb(19, 18, 18);
   padding: 20px 10px;
 }
 
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -35,12 +44,12 @@ body {
 }
 
 .header a:hover {
-  background-color: #ddd;
+  background-color: rgb(134, 131, 131);
   color: black;
 }
 
 .header a.active {
-  background-color: dodgerblue;
+  background-color: #eb2f06;
   color: white;
 }
 
@@ -50,10 +59,13 @@ body {
 
 /* body */
 
-#heading {
+.heading {
   margin-left: 3vw;
+  margin-bottom: 3vh;
 
   font-size: 20px;
+
+  color: #fff;
 }
 
 #form {
@@ -65,11 +77,9 @@ body {
 
   margin-bottom: 3vh;
   margin-top: 5.5vh;
-
-  border: #000 solid 2px;
 }
 
-#origem {
+.inputs {
   display: flex;
 
   width: 25vw;
@@ -85,27 +95,7 @@ body {
 
   border: 2px solid transparent;
   border-radius: 0.5rem;
-  outline: none;
 
-  background: whitesmoke;
-}
-
-#destino {
-  display: flex;
-
-  width: 25vw;
-  height: 6.5vh;
-
-  margin-bottom: 4vh;
-  margin-left: 5vw;
-
-  font-size: 14px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-indent: 4%;
-
-  border: 2px solid transparent;
-  border-radius: 0.5rem;
   outline: none;
 
   background: whitesmoke;
@@ -131,11 +121,17 @@ body {
   height: 20vh;
 
   margin: 1.5%;
+  margin-top: 5%;
+  margin-left: -5vw;
 
-  border: 2px solid #000;
+  padding: 4%;
 
-  border-radius: 0.5rem;
-  box-shadow: #656565;
+  border-radius: 0.5rem 0.5rem 0.5rem 3rem;
+  
+  background: #d9d9d9 ;
+  filter: drop-shadow(0 0 0.75rem red);
+
+  list-style: none;
 }
 
 .move {
@@ -146,24 +142,124 @@ body {
 }
 
 .message {
-  margin-left: 10vw;
+  margin-left: 15vw;
 }
 
 #txt-msg {
-  width: 20vw;
-  height: 40vh;
+  width: 30.5vw;
+  height: 35.5vh;
 
-  resize: none;
-}
+  margin-bottom: 4vh;
+  margin-left: 5vw;
+  padding: 2%;
 
-#btn-send {
-  width: 15vw;
-  height: 5vh;
-
-  margin-left: 2vw;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-indent: 4%;
 
   border: 2px solid transparent;
   border-radius: 0.5rem;
 
-  filter: drop-shadow(0 0 0.75rem red);
+  outline: none;
+  resize: none;
+
+  background: whitesmoke;
+  color: #111;
+}
+
+.btn {
+  width: 15vw;
+  height: 5vh;
+
+  margin-left: 10vw;
+  
+  cursor: pointer;
+
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+
+  filter: drop-shadow(0 0 0.75rem #eb2f06);
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #111;
+
+  padding: 3%;
+
+  border-radius: 0.5rem;
+}
+footer .content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,
+a {
+  color: #fff;
+}
+footer .content .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+footer .content p {
+  text-align: justify;
+}
+footer .content .lower .topic {
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i {
+  padding-right: 16px;
+}
+footer .content .middle {
+  padding-left: 80px;
+}
+footer .content .middle a {
+  line-height: 32px;
+}
+footer .content .right input[type="text"] {
+  width: 100%;
+  height: 45px;
+
+  outline: none;
+
+  color: #d9d9d9;
+  background: #000;
+
+  border-radius: 5px;
+
+  padding-left: 10px;
+
+  font-size: 17px;
+
+  border: 2px solid #222222;
+}
+footer .bottom {
+  width: 100%;
+
+  text-align: right;
+
+  color: #d9d9d9;
+
+  padding: 0 40px 5px 0;
+}
+footer .bottom a {
+  color: #eb2f06;
+}
+footer a {
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: #eb2f06;
 }
