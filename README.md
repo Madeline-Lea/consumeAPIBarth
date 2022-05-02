@@ -7,7 +7,7 @@
  em sua maquina ou de um git clone dentro de um terminal:
 </p>
 
-<code style="color:purple">git clone https://github.com/Madeline-Lea/consumeAPIBarth/tree/Main</code>
+<code style="color:purple">git clone --branch Main https://github.com/Madeline-Lea/consumeAPIBarth/tree/Main</code>
 
 Após ter a aplicação em sua maquina no seu terminal insira: 
 
